@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "blue.is-a.dev",
+  "Id": "10a95067-59de-425f-9bc2-1925692d3d0e"
+}
