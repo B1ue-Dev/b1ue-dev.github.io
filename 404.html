@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 
+<head>
+    <title>B1ueDev</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+</head>
 
-<!-- There is a reason why... -->
 <style>
-	.dark-background {
-		background-color: rgb(6, 6, 6);
-		color: white;
-	}
+    .dark-background {
+        background-color: #000000;
+        color: white;
+    }
 
-	#main{
-	display: table;
-	width: 100%;
-	height: 100vh;
-	text-align: center;
-	}
-	.fof h1{
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		font-size: 50px;
-		display: inline-block;
-		padding-right: 12px;
-		animation: type .5s alternate infinite;
-	}
-	@keyframes type{
-		from{box-shadow: inset -3px 0px 0px #888;}
-		to{box-shadow: inset -3px 0px 0px transparent;}
-	}
-	
-	.button {
-	background-color: #44a1cf;
-	border: none;
-	color: white;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	}
-	.button1 {
-		border-radius: 6px;
-		justify-content: center;
-		display: flex;
-		align-items: center;
-	}
+    #main{
+        display: table;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .fof{
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .fof h1{
+        font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+        font-size: 50px;
+        display: inline-block;
+        padding-right: 12px;
+        animation: type .5s alternate infinite;
+    }
+
+    @keyframes type{
+        from{box-shadow: inset -3px 0px 0px #888;}
+        to{box-shadow: inset -3px 0px 0px transparent;}
+    }
+
+    button {
+        background-color: #44a1cf;
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        transition: all .2s;
+        justify-content: center;
+
+        border-radius: 8px;
+        width: 100px;
+        margin: 0 auto;
+        display: flex;
+    }
+    button:hover {
+        transform: scale(1.2);
+    }
 </style>
 
-
-<!-- Please do not -->
 <body class="dark-background">
+    <div id="main">
+        <div class="fof">
+            <h1>404<br>Page not found</h1>
+        </div>
+    </div>
 
-	<div class="fof">
-		<h1>Error 404 (Page not found)</h1>
-	</div>
-
-	<!---->
-	<button class="button button1" onclick="window.location.href='https://blue.is-a.dev/';">
-		Return Home
-	</button>
+    <button onclick="window.location.href='./index.html';">Return</button>
 
 </body>
+
+<script src="scripts/scale.fix.js"></script>
